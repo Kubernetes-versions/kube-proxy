@@ -1,5 +1,9 @@
 # kube-proxy
 
+### Check the current Kubernetes cluster dependency version
+
+kubeadm config images list --kubernetes-version=${version} |awk -F'/' '{print $NF}'
+
 Docs:
 https://github.com/kubernetes/kubernetes/releases/tag/v1.21.1
 
